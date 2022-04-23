@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Nav from "./components/Nav";
 import About from "./components/About";
-import Gallery from "./components/Portfolio";
+import Portfolio from "./components/Portfolio";
 import ContactForm from "./components/Contact";
 import Resume from "./components/Resume";
 
@@ -24,6 +24,8 @@ function App() {
 
   const [contactSelected, setContactSelected] = useState(false);
 
+  const [resumeSelected, setResumeSelected] = useState(false);
+
   return (
     <div>
       <Nav
@@ -32,16 +34,25 @@ function App() {
         currentCategory={currentCategory}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
+        resumeSelected={resumeSelected}
+        setResumeSelected={setResumeSelected}
       ></Nav>
       <main>
         {!contactSelected ? (
           <>
-            <Gallery currentCategory={currentCategory}></Gallery>
+            <Portfolio currentCategory={currentCategory}></Portfolio>
             <About></About>
-            <Resume></Resume>
           </>
         ) : (
           <ContactForm></ContactForm>
+        )}
+        {!resumeSelected ? (
+          <>
+            <Portfolio currentCategory={currentCategory}></Portfolio>
+            <About></About>
+          </>
+        ) : (
+          <Resume></Resume>
         )}
       </main>
     </div>

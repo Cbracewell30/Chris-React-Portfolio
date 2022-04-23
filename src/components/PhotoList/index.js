@@ -7,40 +7,36 @@ const PhotoList = ({ category }) => {
 
   const [photos] = useState([
     {
-      name: "Grocery aisle",
+      name: "Allstar Sporting Goods",
+      imgid: 0,
       category: "commercial",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      link: "https://cryptic-sea-45670.herokuapp.com/",
     },
     {
       name: "Grocery booth",
+      imgid: 1,
       category: "commercial",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      link: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
     },
     {
       name: "Building exterior",
       category: "commercial",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      link: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
     },
     {
       name: "Restaurant table",
       category: "commercial",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      link: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
     },
     {
       name: "Cafe interior",
       category: "commercial",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      dd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
     },
     {
       name: "Cat green eyes",
       category: "portraits",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      dd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
     },
     {
       name: "Green parrot",
@@ -122,7 +118,7 @@ const PhotoList = ({ category }) => {
     },
   ]);
 
-  const currentPhotos = photos.filter((photo) => photo.category === category);
+  const currentPhotos = photos.filter((photo) => photo.imgid === category);
 
   const toggleModal = (image, i) => {
     setCurrentPhoto({ ...image, index: i });
@@ -137,7 +133,7 @@ const PhotoList = ({ category }) => {
       <div className="flex-row">
         {currentPhotos.map((image, i) => (
           <img
-            src={require(`../../assets/small/${category}/${i}.jpg`)}
+            src={require(`../../assets/apps/${i}.jpg`)}
             alt={image.name}
             className="img-thumbnail mx-1"
             onClick={() => toggleModal(image, i)}
