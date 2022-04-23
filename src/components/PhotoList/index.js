@@ -11,6 +11,7 @@ const PhotoList = ({ category }) => {
       imgid: 0,
       category: "commercial",
       link: "https://cryptic-sea-45670.herokuapp.com/",
+      github: "https://github.com/Cbracewell30/Allstar-Sporting-Company",
     },
     {
       name: "Grocery booth",
@@ -118,8 +119,6 @@ const PhotoList = ({ category }) => {
     },
   ]);
 
-  const currentPhotos = photos.filter((photo) => photo.imgid === category);
-
   const toggleModal = (image, i) => {
     setCurrentPhoto({ ...image, index: i });
     setIsModalOpen(!isModalOpen);
@@ -131,9 +130,9 @@ const PhotoList = ({ category }) => {
         <Modal onClose={toggleModal} currentPhoto={currentPhoto} />
       )}
       <div className="flex-row">
-        {currentPhotos.map((image, i) => (
+        {photos.map((image, i) => (
           <img
-            src={require(`../../assets/apps/${i}.jpg`)}
+            src={`./assets/apps/${image.imgid}.jpg`}
             alt={image.name}
             className="img-thumbnail mx-1"
             onClick={() => toggleModal(image, i)}
