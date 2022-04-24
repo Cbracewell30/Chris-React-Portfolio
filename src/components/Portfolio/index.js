@@ -11,7 +11,7 @@ const PhotoList = ({ category }) => {
       imgid: 0,
       link: "https://cryptic-sea-45670.herokuapp.com/",
       github: "https://github.com/Cbracewell30/Allstar-Sporting-Company",
-      description: "This application is an inventor management system. ",
+      description: "This application is an inventory management system. ",
     },
     {
       name: " NY Best Sellers API",
@@ -66,13 +66,16 @@ const PhotoList = ({ category }) => {
       )}
       <div className="flex-row">
         {photos.map((image, i) => (
-          <img
-            src={`./assets/apps/${image.imgid}.jpg`}
-            alt={image.name}
-            className="img-thumbnail mx-1"
-            onClick={() => toggleModal(image, i)}
-            key={image.name}
-          />
+          <>
+            <h1>{image.name}</h1>
+            <img
+              src={`./assets/apps/${image.imgid}.jpg`}
+              alt={image.name}
+              className="img-thumbnail mx-1"
+              onClick={() => toggleModal(image, i)}
+              key={image.name}
+            />
+          </>
         ))}
       </div>
     </div>

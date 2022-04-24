@@ -4,6 +4,7 @@ import About from "./components/About";
 import ContactForm from "./components/Contact";
 import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
+import Footer from "./components/Footer";
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
@@ -25,20 +26,27 @@ function App() {
         {contactSelected && (
           <>
             <ContactForm></ContactForm>
+            <Footer></Footer>
           </>
         )}
         {resumeSelected && (
           <>
             <Resume></Resume>
+            <Footer></Footer>
           </>
         )}
         {portfolioSelected && (
           <>
             <Portfolio> </Portfolio>
+            <Footer></Footer>
           </>
         )}
         {!contactSelected && !resumeSelected && !portfolioSelected && (
-          <About></About>
+          <>
+            {" "}
+            <About></About>
+            <Footer></Footer>
+          </>
         )}
       </main>
     </div>
