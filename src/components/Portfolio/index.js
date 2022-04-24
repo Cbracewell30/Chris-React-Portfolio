@@ -9,113 +9,48 @@ const PhotoList = ({ category }) => {
     {
       name: "Allstar Sporting Goods",
       imgid: 0,
-      category: "commercial",
       link: "https://cryptic-sea-45670.herokuapp.com/",
       github: "https://github.com/Cbracewell30/Allstar-Sporting-Company",
+      description: "This application is an inventor management system. ",
     },
     {
-      name: "Grocery booth",
+      name: " NY Best Sellers API",
+      imgid: 2,
+      link: "https://cbracewell30.github.io/Book-library/",
+      github: "https://github.com/Cbracewell30/Book-library",
+      description:
+        "This application allows you to get reviews, by genre, for the weekly NY Best Sellers",
+    },
+    {
+      name: "City Weather App",
       imgid: 1,
-      category: "commercial",
-      link: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Building exterior",
-      category: "commercial",
-      link: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Restaurant table",
-      category: "commercial",
-      link: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Cafe interior",
-      category: "commercial",
-      dd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Cat green eyes",
-      category: "portraits",
-      dd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Green parrot",
-      category: "portraits",
+      link: "https://cbracewell30.github.io/Chris-Weather-Forcaster",
+      github: "https://github.com/Cbracewell30/Chris-Weather-Forcaster",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+        "This application allows you to get the 5 day weather forecast for a city, after searching the city's name. ",
     },
     {
-      name: "Yellow macaw",
-      category: "portraits",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      name: "NFL-Quiz",
+      imgid: 3,
+      link: "https://cbracewell30.github.io/NFL-Random-Question-Quiz/",
+      github: "https://github.com/Cbracewell30/NFL-quiz",
+      description: "This application is a NFL Quiz.",
     },
     {
-      name: "Pug smile",
-      category: "portraits",
+      name: " NoteTake",
+      imgid: 4,
+      link: "https://afternoon-fortress-30590.herokuapp.com/",
+      github: "https://github.com/Cbracewell30/express-journal",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+        "This application allows you to add and remove daily notes. ",
     },
     {
-      name: "Pancakes",
-      category: "food",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Burrito",
-      category: "food",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Scallop pasta",
-      category: "food",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Burger",
-      category: "food",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Fruit bowl",
-      category: "food",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Green river",
-      category: "landscape",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Docks",
-      category: "landscape",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Panoramic village by sea",
-      category: "landscape",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Domestic landscape",
-      category: "landscape",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    },
-    {
-      name: "Park bench",
-      category: "landscape",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      name: " Daily Scheduler",
+      imgid: 5,
+      link: "https://cbracewell30.github.io/Chris--daily-calendar-/",
+      github:
+        "https://github.com/Cbracewell30/Chris--daily-calendar-/blob/main/README.md",
+      description: "This application allows you to schedule your day.",
     },
   ]);
 
