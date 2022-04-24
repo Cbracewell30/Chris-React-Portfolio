@@ -7,6 +7,9 @@ function Nav(props) {
     setContactSelected,
     resumeSelected,
     setResumeSelected,
+    setPortfolioSelected,
+    portfolioSelected,
+    setCurrentCategory,
   } = props;
 
   // useEffect(() => {
@@ -25,13 +28,15 @@ function Nav(props) {
       </h2>
       <nav>
         <ul className="flex-row">
-          <li className="mx-2">
+          <li className="mx-2 navActive">
             <a
               data-testid="about"
               href="#about"
               onClick={() => {
                 setContactSelected(false);
                 setResumeSelected(false);
+                setPortfolioSelected(false);
+                setCurrentCategory("About Me");
               }}
             >
               About me
@@ -40,34 +45,57 @@ function Nav(props) {
 
           <li
             className={`mx-1 ${
-              !contactSelected && !resumeSelected && "navActive"
+              portfolioSelected &&
+              !contactSelected &&
+              !resumeSelected &&
+              "navActive"
             }`}
           >
             <span
               onClick={() => {
                 setContactSelected(false);
                 setResumeSelected(false);
+                setPortfolioSelected(true);
+                setCurrentCategory("Portfolio");
               }}
             >
               Portfolio
             </span>
           </li>
-          <li className={`mx-2 ${resumeSelected && "navActive"}`}>
+          <li
+            className={`mx-2 ${
+              resumeSelected &&
+              !contactSelected &&
+              !portfolioSelected &&
+              "navActive"
+            }`}
+          >
             <span
               onClick={() => {
                 setResumeSelected(true);
                 setContactSelected(false);
+                setPortfolioSelected(false);
+                setCurrentCategory("Resume");
               }}
             >
               Resume
             </span>
           </li>
 
-          <li className={`mx-2 ${contactSelected && "navActive"}`}>
+          <li
+            className={`mx-2 ${
+              contactSelected &&
+              !resumeSelected &&
+              !portfolioSelected &&
+              "navActive"
+            }`}
+          >
             <span
               onClick={() => {
                 setContactSelected(true);
                 setResumeSelected(false);
+                setPortfolioSelected(false);
+                setCurrentCategory("Contact");
               }}
             >
               Contact
