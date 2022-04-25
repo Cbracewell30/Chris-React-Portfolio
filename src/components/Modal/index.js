@@ -9,8 +9,12 @@ const Modal = ({ onClose, currentPhoto }) => {
         <h3 className="modalTitle">{name} </h3>
         <img src={`./assets/apps/${imgid}.jpg`} alt="current category" />
         <p>{description}</p>
-        <a href={link}>Deployment</a>
-        <a href={github}>Github</a>
+        <a href={link} className="modal-content">
+          Deployment
+        </a>
+        <a href={github} className="modal-content">
+          Github
+        </a>
         <button type="button" onClick={onClose}>
           Close this modal
         </button>

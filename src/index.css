@@ -78,6 +78,10 @@ p {
   margin-top: 0;
 }
 
+.modal-content{
+  padding: 15px;
+}
+
 a {
   color: var(--tertiary);
   text-decoration: none;
@@ -117,9 +121,7 @@ button[disabled] {
   opacity: 0.8;
 }
 
-img {
-  max-width: 100%;
-}
+
 
 span[role='img'] {
   cursor: default;
