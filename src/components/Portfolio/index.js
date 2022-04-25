@@ -64,17 +64,19 @@ const PhotoList = ({ category }) => {
       {isModalOpen && (
         <Modal onClose={toggleModal} currentPhoto={currentPhoto} />
       )}
-      <div className="flex-row applications">
+      <div className="flex-row">
         {photos.map((image, i) => (
           <>
-            <h1 className="img-thumbnail">{image.name}</h1>
-            <img
-              src={`./assets/apps/${image.imgid}.jpg`}
-              alt={image.name}
-              className="img-thumbnail mx-2"
-              onClick={() => toggleModal(image, i)}
-              key={image.name}
-            />
+            <div className="projects">
+              <h1 className="img-thumbnail">{image.name}</h1>
+              <img
+                src={`./assets/apps/${image.imgid}.jpg`}
+                alt={image.name}
+                className="img-thumbnail mx-2"
+                onClick={() => toggleModal(image, i)}
+                key={image.name}
+              />
+            </div>
           </>
         ))}
       </div>

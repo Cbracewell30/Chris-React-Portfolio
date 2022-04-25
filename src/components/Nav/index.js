@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../assets/logo-blue.png";
 
 function Nav(props) {
   const {
@@ -14,10 +15,15 @@ function Nav(props) {
     <header className="flex-row px-1">
       <h2>
         <a data-testid="link" href="/">
-          <span role="img" aria-label="camera">
-            {" "}
-          </span>{" "}
+          <span role="img" aria-label="camera"></span>
           Christopher Bracewell
+          <img
+            src={logo}
+            alt="logo"
+            className="logo"
+            width="50px"
+            height="50px"
+          ></img>
         </a>
       </h2>
       <nav>
