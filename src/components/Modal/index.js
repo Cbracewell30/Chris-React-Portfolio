@@ -7,8 +7,12 @@ const Modal = ({ onClose, currentPhoto }) => {
     <div className="modalBackdrop">
       <div className="modalContainer">
         <h3 className="modalTitle">{name} </h3>
-        <img src={`./assets/apps/${imgid}.jpg`} alt="current category" />
-        <p>{description}</p>
+        <img
+          src={`./assets/apps/${imgid}.jpg`}
+          alt="current category"
+          className="img-thumbnail"
+        />
+        <p className="modal-description">{description}</p>
         <a href={link} className="modal-content">
           Deployment
         </a>

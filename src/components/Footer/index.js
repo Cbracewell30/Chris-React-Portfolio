@@ -20,7 +20,7 @@ function Footer() {
             Stack Overflow
           </a>
         </h4>
-        <h4 className="mx-2"> Phone: 248-894-8601</h4>
+        <h4 className="mx-2 phone"> Phone: 248-894-8601</h4>
       </div>
     </footer>
   );

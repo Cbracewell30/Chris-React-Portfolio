@@ -19,8 +19,8 @@ function About() {
           developer bootcamp. I have loved learning the different languages and
           being able to use them to create Application. In the portfolio tab,
           you can see some of my Application. If you click the images, a modal
-          will provide links to the Application Deployment. I hope you enjoy
-          them! Thank you!
+          will provide links to the Deployment. I hope you enjoy them! Thank
+          you!
         </p>
       </div>
     </section>
