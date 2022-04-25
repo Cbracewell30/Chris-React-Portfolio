@@ -37,7 +37,7 @@ Manual
 Langues used in this project include JavaScript,HTML,CSS,ES6,Bootstrap, React
 
 #### Deployment 
-
+https://cbracewell30.github.io/chris-react-portfolio
 
 #### ScreenShot
 ![image](https://user-images.githubusercontent.com/93891189/165015118-189236a8-44f8-41ba-a0f8-b95ec267241a.png)
