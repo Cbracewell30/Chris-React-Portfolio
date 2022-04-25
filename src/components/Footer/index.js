@@ -15,6 +15,11 @@ function Footer() {
           LinkedIn
         </a>
       </h4>
+      <h4>
+        <a href="https://stackoverflow.com/users/17363260/cbracewell30?tab=profile/">
+          stackoverflow
+        </a>
+      </h4>
     </footer>
   );
 }

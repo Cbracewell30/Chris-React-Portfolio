@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
+import React from "react";
 
 function Nav(props) {
   const {
@@ -9,12 +8,7 @@ function Nav(props) {
     setResumeSelected,
     setPortfolioSelected,
     portfolioSelected,
-    setCurrentCategory,
   } = props;
-
-  // useEffect(() => {
-  //   document.title = ;
-  // }, [currentCategory]);
 
   return (
     <header className="flex-row px-1">
@@ -36,7 +30,6 @@ function Nav(props) {
                 setContactSelected(false);
                 setResumeSelected(false);
                 setPortfolioSelected(false);
-                setCurrentCategory("About Me");
               }}
             >
               About me
@@ -44,38 +37,32 @@ function Nav(props) {
           </li>
 
           <li
-            className={`mx-1 ${
-              portfolioSelected &&
+            className={`mx-1 ${portfolioSelected &&
               !contactSelected &&
               !resumeSelected &&
-              "navActive"
-            }`}
+              "navActive"}`}
           >
             <span
               onClick={() => {
                 setContactSelected(false);
                 setResumeSelected(false);
                 setPortfolioSelected(true);
-                setCurrentCategory("Portfolio");
               }}
             >
               Portfolio
             </span>
           </li>
           <li
-            className={`mx-2 ${
-              resumeSelected &&
+            className={`mx-2 ${resumeSelected &&
               !contactSelected &&
               !portfolioSelected &&
-              "navActive"
-            }`}
+              "navActive"}`}
           >
             <span
               onClick={() => {
                 setResumeSelected(true);
                 setContactSelected(false);
                 setPortfolioSelected(false);
-                setCurrentCategory("Resume");
               }}
             >
               Resume
@@ -83,19 +70,16 @@ function Nav(props) {
           </li>
 
           <li
-            className={`mx-2 ${
-              contactSelected &&
+            className={`mx-2 ${contactSelected &&
               !resumeSelected &&
               !portfolioSelected &&
-              "navActive"
-            }`}
+              "navActive"}`}
           >
             <span
               onClick={() => {
                 setContactSelected(true);
                 setResumeSelected(false);
                 setPortfolioSelected(false);
-                setCurrentCategory("Contact");
               }}
             >
               Contact

@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-
-import { validateEmail } from "../../utils/helpers";
+import React from "react";
 
 function Resume() {
   return (
@@ -8,8 +6,8 @@ function Resume() {
       <iframe
         title="resume"
         src="https://docs.google.com/document/d/1hTT-GSN-Xrf3x9-nDLHoc67ow0xQsnBR7_1wyV_xbzs/edit?usp=sharing"
-        height="1200px"
-        width="1200px"
+        height="800px"
+        width="1000px"
       ></iframe>
     </section>
   );
