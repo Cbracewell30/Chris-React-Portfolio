@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import Nav from "./components/Nav";
 import About from "./components/About";
 import ContactForm from "./components/Contact";
-import Resume from "./components/Resume";
-import Portfolio from "./components/Portfolio";
+import PhotoList from "./components/Portfolio";
 import Footer from "./components/Footer";
 
 function App() {
@@ -37,7 +36,7 @@ function App() {
         )}
         {portfolioSelected && (
           <>
-            <Portfolio> </Portfolio>
+            <PhotoList> </PhotoList>
             <Footer></Footer>
           </>
         )}
