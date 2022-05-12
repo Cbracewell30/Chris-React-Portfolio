@@ -52,6 +52,12 @@ const PhotoList = ({ category }) => {
         "https://github.com/Cbracewell30/Chris--daily-calendar-/blob/main/README.md",
       description: "This application allows you to schedule your day.",
     },
+
+    (name: "Sweet Treats"),
+    (imgid: 6),
+    (link: "https://thawing-tor-90968.herokuapp.com/"),
+    (github: " https://github.com/matthewpetriella/animated-telegram"),
+    (description: " This application allows customers to purchase baked goods.  "),
   ]);
 
   const toggleModal = (image, i) => {
