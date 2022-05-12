@@ -4,6 +4,7 @@ import About from "./components/About";
 import ContactForm from "./components/Contact";
 import PhotoList from "./components/Portfolio";
 import Footer from "./components/Footer";
+import Resume from "./components/Resume";
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);

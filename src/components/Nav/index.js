@@ -14,7 +14,7 @@ function Nav(props) {
   return (
     <header className="flex-row px-1">
       <h2>
-        <a data-testid="link" href="/">
+        <a data-testid="link" href="/" target="_blank">
           <span role="img" aria-label="camera"></span>
           Christopher Bracewell
           <img
@@ -43,10 +43,12 @@ function Nav(props) {
           </li>
 
           <li
-            className={`mx-1 ${portfolioSelected &&
+            className={`mx-1 ${
+              portfolioSelected &&
               !contactSelected &&
               !resumeSelected &&
-              "navActive"}`}
+              "navActive"
+            }`}
           >
             <span
               onClick={() => {
@@ -59,10 +61,12 @@ function Nav(props) {
             </span>
           </li>
           <li
-            className={`mx-2 ${resumeSelected &&
+            className={`mx-2 ${
+              resumeSelected &&
               !contactSelected &&
               !portfolioSelected &&
-              "navActive"}`}
+              "navActive"
+            }`}
           >
             <span
               onClick={() => {
@@ -76,10 +80,12 @@ function Nav(props) {
           </li>
 
           <li
-            className={`mx-2 ${contactSelected &&
+            className={`mx-2 ${
+              contactSelected &&
               !resumeSelected &&
               !portfolioSelected &&
-              "navActive"}`}
+              "navActive"
+            }`}
           >
             <span
               onClick={() => {
